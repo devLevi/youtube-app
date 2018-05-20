@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+a {
+    color: rgb(194, 41, 54);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+h1 {
+    display: inline;
+    padding: 0;
+    margin:0;
+    vertical-align: middle;
+}
+
+#header {
+    position: relative;
+    height: 50px;
+    width: 490px;
+    margin: 30px auto;
+}
+
+#header h1 {
+    float: left;
+    height: 35px;
+    width: auto;
+}
+
+#header img {
+    float: left;
+    height: 35px;
+    margin: 0 10px;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.js-query {
+    border-style: solid;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.search-button {
+    font-size: 25px;
+    vertical-align: bottom;
+    border-style: none;
+}
+
+.search-button:hover {
+    color: rgb(194, 41, 54);
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.results-container {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.injected-results-container img:hover {
+    border: 4px solid rgb(194, 41, 54);
+}
