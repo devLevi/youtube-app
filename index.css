@@ -8,6 +8,11 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+a:hover {
+    color: #000;
+    font-weight: bold;
+}
 h1 {
     display: inline;
     padding: 0;
