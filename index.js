@@ -18,12 +18,12 @@ function getDataFromApi(searchTerm, callback) {
 }
 
 function renderResult(result) {
-  return `
+    return `
     <div class="injected-results-container">
-      <h3>
+      <div>
         <a class="js-result-name" href="https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank">${result.snippet.title}</a>
-      </h3>
-        <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank"><img src="${result.snippet.thumbnails.medium.url}"></a>
+      </div>
+        <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank"><img alt = "youtube video"src="${result.snippet.thumbnails.medium.url}"></a>
     </div>
   `;
 }
@@ -40,6 +40,7 @@ function watchSubmit() {
     const query = queryTarget.val();
     // clear out the input
     queryTarget.val("");
+     $('main').prop('hidden', false);
     getDataFromApi(query, displayYoutubeSearchData);
   });
 }
